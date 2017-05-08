@@ -17,7 +17,7 @@ http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/
     <jms:activemq-connector name="Active_MQ" brokerURL="vm://localhost" validateConnections="true" doc:name="Active MQ"/>
     <flow name="mavenFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/hello" doc:name="HTTP"/>
-        <set-payload value="#[&quot;Hello maven&quot;]" doc:name="Set Payload"/>
+        <set-payload value="#[&quot;Hello Maven&quot;]" doc:name="Set Payload"/>
     </flow>
     <flow name="retrieveFlights">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/flights" doc:name="HTTP"/>
